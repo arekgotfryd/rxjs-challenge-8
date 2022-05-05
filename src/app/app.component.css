@@ -1,0 +1,13 @@
+p {
+  font-family: Lato;
+}
+
+input {
+  display: block;
+  margin-top: 20px;
+  background-color: #e7e7e7;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

@@ -1,0 +1,14 @@
+<blockquote>
+  Make an operator function to prevent unnecessary backend requests when it is
+  possible to calculate items locally. For example, if user requested 'tes' and
+  got <code>['test1', 'test2', 'test3']</code> then there is no need to make
+  requests for 'test' or 'test1'
+</blockquote>
+
+<input [formControl]="control" />
+
+<h3>Items:</h3>
+
+<p *ngFor="let item of ((items$ | async) || emptyArray) | filter : filterValue : control.value">
+  {{item}}
+</p>
